@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+<h3>フォローを返してくれない人</h3>
+{% if length['follows_only'] == 0 %}
+  <p>No one.</p>
+{% else %}
+  <p>{{follows_only[0]['username']}}</p>
+{% endif %}
+<h3>あなたがフォローしていない人</h3>
+{% if length['follows_only'] == 0 %}
+  <p>No one.</p>
+{% else %}
+  <p>{{followed_only[0]['username']}}</p>
+{% endif %}
+{% endblock %}

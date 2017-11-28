@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>{{info['name']}}</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="initial-scale=1, width=device-width" />
+  <meta name="author" content="mktia" />
+  <meta name="description" content="{{info['description']}}" />
+  <link rel="stylesheet" href="../static/style.css" type="text/css" />
+</head>
+
+<body>
+  <div class="header">
+    <header>
+      <!-- <img src="../static/logo.jpg" /> -->
+      <h1>{{info['name']}}</h1>
+    </header>
+  </div>
+  {% block content %}{% endblock %}
+</body>
+<div class="footer">
+  <footer>
+    <p><a href="/privacy">Privacy Policy</a> | <a href="/contact">Contact Us</a></p>
+    <p>&copy; 2017 mktia.</p>
+  </footer>
+</div>
+
+</html>

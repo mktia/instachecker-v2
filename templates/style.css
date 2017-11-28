@@ -1,0 +1,42 @@
+/* Mobile first
+   element -> class -> id
+
+   **recommend**
+   - follow BEM method to name each element
+
+   **not recommend**
+   - use id
+*/
+
+body {
+  margin: 0;
+  width: 100%;
+}
+
+.footer {
+  text-align: center;
+}
+
+/* Mobile SS (iPhone 5) */
+
+@media screen and (min-width: 320px) {}
+
+/* Mobile S (Galaxy S5) */
+
+@media screen and (min-width: 360px) {}
+
+/* Mobile M (iPhone 6) */
+
+@media screen and (min-width: 375px) {}
+
+/* Mobile L (larger than iPhone 6s) */
+
+@media screen and (min-width: 425px) {}
+
+/* Tablet (iPad) */
+
+@media screen and (min-width: 768px) {}
+
+/* Laptop S */
+
+@media screen and (min-width: 1024px) {}
